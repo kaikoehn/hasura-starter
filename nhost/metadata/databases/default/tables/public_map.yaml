@@ -1,0 +1,11 @@
+table:
+  name: map
+  schema: public
+array_relationships:
+  - name: position_update
+    using:
+      foreign_key_constraint_on:
+        column: map_pk
+        table:
+          name: position_update
+          schema: public

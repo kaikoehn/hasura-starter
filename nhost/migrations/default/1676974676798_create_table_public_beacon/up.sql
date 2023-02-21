@@ -1,0 +1,1 @@
+CREATE TABLE public.beacon (pk int4 GENERATED ALWAYS AS IDENTITY, uuid uuid DEFAULT gen_random_uuid() UNIQUE NOT NULL, mac macaddr NOT NULL, meta jsonb DEFAULT jsonb_build_object() NOT NULL, PRIMARY KEY (pk));

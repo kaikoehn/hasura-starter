@@ -1,0 +1,13 @@
+table:
+  name: position_update
+  schema: public
+object_relationships:
+  - name: beacon
+    using:
+      foreign_key_constraint_on: beacon_pk
+  - name: entity
+    using:
+      foreign_key_constraint_on: entity_pk
+  - name: map
+    using:
+      foreign_key_constraint_on: map_pk
